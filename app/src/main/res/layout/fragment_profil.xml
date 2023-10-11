@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewProfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/ic_profil" />
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama: "
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nim: "
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat: "
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewKodePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode Pos: "
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewNoTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Telepon: "
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewProgramStudi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program Studi: "
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewNoSemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester: "
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewNoGolongan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Golongan: "
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

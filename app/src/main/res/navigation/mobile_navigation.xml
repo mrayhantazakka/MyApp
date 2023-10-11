@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myapp.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myapp.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_skill"
+        android:name="com.example.myapp.ui.skill.SkillFragment"
+        android:label="@string/title_skill"
+        tools:layout="@layout/fragment_skill" >
+        <action
+            android:id="@+id/action_navigation_skill_to_navigation_skill_detail"
+            app:destination="@id/navigation_skill_detail"
+            app:popUpTo="@id/navigation_skill" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_skill_detail"
+        android:name="com.example.myapp.ui.skill.SkillFragment"
+        android:label="@string/title_skill_detail"
+        tools:layout="@layout/fragment_skill_detail" >
+    <argument
+        android:name="extra_name"
+        app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profil"
+        android:name="com.example.myapp.ui.profil.ProfilFragment"
+        android:label="@string/title_profil"
+        tools:layout="@layout/fragment_profil" />
+</navigation>
